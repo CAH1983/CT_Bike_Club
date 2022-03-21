@@ -1,0 +1,33 @@
+.ContactCard {
+    width: 22em;
+    height: auto;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 50%);
+    font-size: 0.9em;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.ContactCard:hover {
+    background: rgba(235, 237, 189, 0.5);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.03);
+}
+
+.ContactCard img {
+    border-radius: 50%;
+}
+
+.contact-names {
+    font-weight: bold;
+}
+
+
+.contact-details-wrapper {
+    padding-left: 1em;
+    justify-content: flex-start;
+}

@@ -6,11 +6,14 @@ const ContactCard = ({ firstName, lastName, phone, src}) => {
     return( 
 
         <div className='ContactCard'>
-            <img src={src} alt={`${lastName}-picture`}/>
+            <div>
 
-            <div className="details">
-            <p>{firstName} {lastName}</p>
-            <p> Tel: {phone}</p>
+            <img src={src} alt={`${lastName}-pic`}/>
+            </div>
+
+            <div className="contact-details-wrapper">
+                <p className='contact-names'>{firstName} {lastName}</p>
+                <p className='contact-phone'> Tel: {phone}</p>
             </div>
 
 
