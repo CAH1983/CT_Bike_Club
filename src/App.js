@@ -10,7 +10,6 @@ function App() {
 
   const [darkMode, setDarkMode] = useState(false);
 
-
   return (
     <div className="App">
       <Header />
