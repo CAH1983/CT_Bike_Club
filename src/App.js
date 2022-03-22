@@ -27,7 +27,7 @@ function App() {
         <ul className='contacts-wrapper' role='tablist'>
 
           {contactsData.map(contact => (
-            <li key={contact.id} role='tab'>
+            <li key={contact.id} >
               <ContactCard firstName={contact.first_name} lastName={contact.last_name} phone={contact.phone} />
 
             </li>
