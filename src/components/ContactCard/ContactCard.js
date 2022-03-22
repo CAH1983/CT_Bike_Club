@@ -6,6 +6,7 @@ const ContactCard = ({ firstName, lastName, phone }) => {
     const [open, setModalOpen] = useState(false);
     const generateNum = () => Math.floor(Math.random() * 10) + 1;
     const randomNum = generateNum();
+    
     return (
 
         <div role="tab" className={open ? 'contact-card-big' : 'ContactCard'} onClick={() => setModalOpen(!open)}>
