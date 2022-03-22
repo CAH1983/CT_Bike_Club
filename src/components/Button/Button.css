@@ -11,3 +11,8 @@
 .button:hover {
   opacity: 0.7;
 }
+
+/* remove outline */
+.button:focus {
+  outline: none;
+}
