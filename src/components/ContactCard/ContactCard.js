@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './ContactCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 
 const ContactCard = ({ firstName, lastName, phone }) => {
@@ -7,7 +9,8 @@ const ContactCard = ({ firstName, lastName, phone }) => {
     const generateNum = () => Math.floor(Math.random() * 10) + 1;
     const randomNum = generateNum();
 
-    const handleClick = () => {
+    const handleClick = (e) => {
+        e.preventDefault();
         setModalOpen(!open);
     }
 
@@ -24,7 +27,7 @@ const ContactCard = ({ firstName, lastName, phone }) => {
 
             <div className="contact-details-wrapper">
                 <h3 className='contact-names'>{firstName} {lastName}</h3>
-                <p className='contact-phone'> Tel:{phone}</p>
+                <p className='contact-phone'> <FontAwesomeIcon icon={faPhone} /> {phone}</p>
             </div>
 
         </div>
