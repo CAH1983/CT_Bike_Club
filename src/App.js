@@ -28,7 +28,7 @@ function App() {
 
         <ul className='contacts-wrapper'>
 
-          {contactsData.map(contact => (
+        {contactsData.map(contact => (
             <li key={contact.id}>
               <ContactCard firstName={contact.first_name} lastName={contact.last_name} phone={contact.phone} src={require(`./contact-images/${randomNum}.jpeg`)} />
 

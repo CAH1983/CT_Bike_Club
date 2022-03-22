@@ -16,7 +16,7 @@ const ContactCard = ({ firstName, lastName, phone, src }) => {
             </div>
 
             <div className="contact-details-wrapper">
-                <p className='contact-names'>{firstName} {lastName}</p>
+                <h3 className='contact-names'>{firstName} {lastName}</h3>
                 <p className='contact-phone'> Tel: {phone}</p>
             </div>
 

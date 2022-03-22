@@ -8,6 +8,7 @@
 main {
   display: flex;
   justify-content: center;
+  padding-top: 3em;
 }
 
 .contacts-wrapper {
@@ -27,7 +28,7 @@ main {
 
 .dark-mode {
   background-color: #1a1919;
-  color: #999;
+  color: #c6c5c5;
   height: 100%;
   transition: background-color 0.25s ease-in-out;
 }

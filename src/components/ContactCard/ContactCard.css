@@ -40,12 +40,8 @@
     border-radius: 50%;
 }
 
-.contact-names {
-    font-weight: bold;
-}
-
 
 .contact-details-wrapper {
     padding-left: 1em;
-    justify-content: flex-start;
+    text-align: start;
 }
