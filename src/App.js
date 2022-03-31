@@ -4,9 +4,20 @@ import ContactCard from './components/ContactCard/ContactCard';
 import React, { useState } from 'react';
 import contactsData from './contact-data.json';
 
+const sortData = (arr) => {
+  // let sortedArr = [];
+  arr = arr.sort((a, b) => {
+    if (a.first_name < b.first_name) return -1;
+    if (a.first_name > b.first_name) return 1;
+    return 0;
+  })
+  return arr;
+}
+
 function App() {
 
   const [darkMode, setDarkMode] = useState(false);
+  // const [isSorted, setSorted] = useState(false);
 
   return (
     <div className="App">
